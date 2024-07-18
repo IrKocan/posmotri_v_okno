@@ -10,6 +10,11 @@ html {
 
 .more-button {
   background-color: transparent;
+  display: block;
+  width: 399px;
+  height: 34px;
+  margin-top: 34px;
+  margin-bottom: 1px;
 }
 
 .page {
@@ -21,6 +26,8 @@ html {
   inline-size: 1200px;
   block-size: 100%;
   margin: 133px 30px; 
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -123,6 +130,9 @@ ol {
   &:focus-visible {
     outline: 1px solid #ffffff;
   }
+  &:active {
+    background-color: #545050;
+  }
 }
 
 .content__video-card { 
@@ -219,14 +229,6 @@ button:focus, .search-form__label:focus,
   margin-top: 18px;
 }
 
-.more-button {
-  display: block;
-  width: 399px;
-  height: 34px;
-  margin-top: 34px;
-  margin-bottom: 1px;
-}
-
 .search-form { 
   display: flex;
   flex-direction: row;
@@ -310,7 +312,7 @@ fieldset {
   background-color: #ffffff;
 }
 
-.search-form__label:hover:has(.search-form__label-text) { 
+.search-form__label:hover .search-form__label-text { 
   text-decoration: underline;
   cursor: pointer;
 }

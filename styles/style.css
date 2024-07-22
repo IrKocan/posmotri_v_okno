@@ -18,16 +18,16 @@ html {
 }
 
 .page {
-  display: flex;
+  display: grid;
   color: #ffffff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #201d1d;
   inline-size: 1200px;
   block-size: 100%;
-  margin: 133px 30px; 
-  justify-content: center;
+  justify-items: center;
   align-items: center;
+  margin: auto;
 }
 
 h1,
